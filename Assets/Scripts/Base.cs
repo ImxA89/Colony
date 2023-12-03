@@ -15,7 +15,7 @@ public class Base : MonoBehaviour
 
     public event Func<List<Copper>> ResoursesScanned;
 
-    public void Awake()
+    private void Awake()
     {
         _freeWorkers = new Queue<Worker>();
         _busyWorkers = new List<Worker> ();

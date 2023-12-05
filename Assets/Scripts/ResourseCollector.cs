@@ -10,9 +10,13 @@ public class ResourseCollector : MonoBehaviour
     private List<Copper> _resourses;
     private float _delayTime = 4f;
 
-    private void Start()
+    private void Awake()
     {
         _resourses = new List<Copper>();
+    }
+
+    private void Start()
+    {
         StartCoroutine(AddNewResourses());
     }
 
@@ -22,8 +26,8 @@ public class ResourseCollector : MonoBehaviour
 
         for (int i = 0; _resourses.Count > i; i++)
         {
-            resourses.Add(_resourses[i]);
-            _resourses.Remove(_resourses[i]);
+                resourses.Add(_resourses[i]);
+                _resourses.Remove(_resourses[i]);
         }
 
         return resourses;
@@ -37,7 +41,7 @@ public class ResourseCollector : MonoBehaviour
         {
             for (int i = 0; i < _spawnCount; i++)
             {
-               _resourses.Add(_resourseSpawner.Spawn());
+                _resourses.Add(_resourseSpawner.Spawn());
             }
 
             yield return delay;

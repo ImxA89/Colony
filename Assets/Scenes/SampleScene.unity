@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6162043046033322994, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
+      propertyPath: _speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6194878087111239657, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.97318
@@ -255,17 +259,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
---- !u!114 &337847689 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -510502807152353503, guid: e67c78310bbbf1b4a9719730d4372ada, type: 3}
-  m_PrefabInstance: {fileID: 1462091013}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14cc08686706b6743b38bc89a84fc50e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &611197926 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8626522342150874266, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
@@ -382,6 +375,10 @@ PrefabInstance:
     - target: {fileID: 4815735727040746091, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
       propertyPath: m_Name
       value: Worker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162043046033322994, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
+      propertyPath: _speed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6194878087111239657, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker
       objectReference: {fileID: 0}
+    - target: {fileID: 6162043046033322994, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
+      propertyPath: _speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6194878087111239657, guid: 355345fa82643b4439538e109bec5c0b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.815235
@@ -596,7 +597,6 @@ GameObject:
   - component: {fileID: 1392636229}
   - component: {fileID: 1392636228}
   - component: {fileID: 1392636227}
-  - component: {fileID: 1392636230}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -678,20 +678,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1392636230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392636226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be3dff5cb3508f4ba4a552210f8b320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _base: {fileID: 337847689}
-  _resourseCollector: {fileID: 102952663}
 --- !u!1001 &1462091013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -760,6 +746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948353095919763824, guid: e67c78310bbbf1b4a9719730d4372ada, type: 3}
+      propertyPath: _resourseCollector
+      value: 
+      objectReference: {fileID: 102952663}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

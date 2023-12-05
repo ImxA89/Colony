@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Base : MonoBehaviour
 {
-    [SerializeField] List<Worker> _startWorkers;
+    [SerializeField] private List<Worker> _startWorkers;
     [SerializeField][Range(0f, 10f)] private float _scanDelayTime;
 
     private Queue<Worker> _freeWorkers;

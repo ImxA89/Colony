@@ -1,6 +1,3 @@
 using UnityEngine;
 
-public class Copper : MonoBehaviour
-{
-
-}
+public class Copper : MonoBehaviour{}

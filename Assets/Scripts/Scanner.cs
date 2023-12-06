@@ -5,15 +5,19 @@ using UnityEngine;
 
 public class Scanner : MonoBehaviour
 {
-    [SerializeField] private ResourseCollector _resourseCollector;
-
-    private int _scanDelayTime = 2;
+    private ResourseCollector _resourseCollector;
+    private int _scanDelayTime = 4;
 
     public event Action<List<Copper>> ResursesScaned;
 
     private void Start()
     {
         StartCoroutine(ScanResourse());
+    }
+
+    public void SetResourseCollector(ResourseCollector resourseCollector)
+    {
+        _resourseCollector = resourseCollector;
     }
 
     private IEnumerator ScanResourse()

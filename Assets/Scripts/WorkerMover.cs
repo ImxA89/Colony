@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class WorkerMover : MonoBehaviour
 {
-    [SerializeField][Range(1f, 10f)] private float _speed;
+    [SerializeField][Range(1f, 20f)] private float _speed;
 
     private float _minDistanse = 0.3f;
-    private Vector3 _target;
+    private Transform _target;
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, _target) > _minDistanse)
-            Move(_target);
+        if (Vector3.Distance(transform.position, _target.position) > _minDistanse)
+            Move(_target.position);
     }
 
-    public void TakeTarget(Vector3 target)
+    public void TakeTarget(Transform target)
     {
         _target = target;
     }

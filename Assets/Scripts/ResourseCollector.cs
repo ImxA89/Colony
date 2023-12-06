@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ResourseSpawner))]
 public class ResourseCollector : MonoBehaviour
 {
-    [SerializeField] private ResourseSpawner _resourseSpawner;
     [SerializeField] private uint _spawnCount;
 
+    private ResourseSpawner _resourseSpawner;
     private List<Copper> _resourses;
     private float _delayTime = 4f;
 
     private void Awake()
     {
         _resourses = new List<Copper>();
+        _resourseSpawner = GetComponent<ResourseSpawner>();
     }
 
     private void Start()
@@ -24,10 +26,10 @@ public class ResourseCollector : MonoBehaviour
     {
         List<Copper> resourses = new List<Copper>();
 
-        for (int i = 0; _resourses.Count > i; i++)
+        for (int i = 0;i< _resourses.Count; i++)
         {
-                resourses.Add(_resourses[i]);
-                _resourses.Remove(_resourses[i]);
+            resourses.Add(_resourses[i]);
+            _resourses.Remove(_resourses[i]);
         }
 
         return resourses;
